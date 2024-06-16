@@ -2,7 +2,8 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   namespace: example04
-  generateName: dummy-sync-fail-
+  name: dummy-sync-fail
+  # generateName: dummy-sync-fail-
   annotations:
     argocd.argoproj.io/hook: Sync
 spec:
